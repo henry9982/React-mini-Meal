@@ -10,3 +10,8 @@
 .smooth{
     transition: 0.3s ease-out;
 }
+
+.btnHover:hover .btn{
+    transform: scale(1.15);
+    transition-duration: 300ms;
+}

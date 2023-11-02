@@ -9,7 +9,6 @@ import DefaultTopPick from './pages/DefaultTopPick'
 
 const App = () => {
   const location = useLocation()
-  console.log(location);
   return (
     <div className=''>
        <Nav/>
