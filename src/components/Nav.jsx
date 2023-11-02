@@ -30,10 +30,10 @@ const Nav = () => {
     <nav className='flex justify-around p-2 px-5 items-center'>
         <div className='flex items-center gap-2 hover:cursor-pointer' onClick={()=>navigate('/')}>
             <BiDish className='text-4xl text-[#d7258a] hover:scale-[1.2] smooth'/>
-            <h1 className='text-2xl font-poppins font-semibold hover:scale-[1.2] smooth  text-[#F99417]'>Foodie</h1>
+            <h1 className='text-2xl hidden sm:block font-poppins font-semibold hover:scale-[1.2] smooth  text-[#F99417]'>Foodie</h1>
         </div>
       {pathLocation==='detail'?'':        <div className='bg-white relative flex items-center px-3 py-2 rounded-3xl   justify-between '>
-            <input onChange={(e)=>dispatch(setSearch(e.target.value))} value={search} type="text" className='outline-none w-64' placeholder='Search...' />
+            <input onChange={(e)=>dispatch(setSearch(e.target.value))} value={search} type="text" className='outline-none w-64 max-[485px]:w-52' placeholder='Search...' />
             <div className='absolute right-1 w-9 h-9 bg-slate-700 flex justify-center items-center rounded-full'>
             <BiSearch className='text-white  text-2xl cursor-pointer'/>
 

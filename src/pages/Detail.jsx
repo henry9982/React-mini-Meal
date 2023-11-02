@@ -22,7 +22,7 @@ const Detail = () => {
   }else{
     return (
       <>
-        {isLoading?<Loader/>:    data?.meals.map(details=><div key={details.idMeal} className='bg-[#fdfdfd] border-2 p-5 gap-5 rounded-xl flex flex-col  my-8 shadow-xl sm:w-[500px] shadow-slate-300/50 justify-center items-center mx-auto w-96'>
+        {isLoading?<Loader/>:    data?.meals.map(details=><div key={details.idMeal} className='bg-[#fdfdfd] border-2 max-[500px]:w-11/12 p-5 gap-5 rounded-xl flex flex-col  my-8 shadow-xl sm:w-[500px] shadow-slate-300/50 justify-center items-center mx-auto w-96'>
           <img className='rounded-xl' src={details.strMealThumb} alt="" />
             <h1 className='text-2xl text-[#CD5C08] font-semibold'>{details.strMeal}</h1>
             <ul className='w-full flex flex-row justify-between items-center'>

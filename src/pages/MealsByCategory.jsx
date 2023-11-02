@@ -25,7 +25,7 @@ const MealsByCategory = () => {
 
     if (categories.find(category=>category===id)) {
         return (
-            <div className='cart-Container p-3 flex flex-wrap gap-10 justify-center items-center'>
+            <div className='cart-Container p-3 flex flex-wrap gap-10 max-[485px]:gap-4 justify-center items-center'>
                 {isLoading?<Loader/>:mealsData.meals.length>0?mealsData.meals.map(meal=><Card meal={meal} key={meal.idMeal}/>):<div>No Meals Found</div>}
             </div>
           )

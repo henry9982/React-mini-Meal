@@ -23,7 +23,7 @@ const DefaultTopPick = () => {
     const mealsData = useSelector(state=>state.meals)
     
   return (
-    <div className='flex flex-wrap gap-8 justify-center items-center'>
+    <div className='flex flex-wrap gap-8 max-[485px]:gap-4 justify-center items-center'>
         {isLoading?<Loader/>:mealsData.meals.length>0?mealsData.meals.map(meal=><Card meal={meal} key={meal.idMeal} isDefault={true}/>):<div className='flex items-center gap-2 my-10'> <div className='text-2xl font-poppins' >No Meals Found</div> <MdNoMealsOuline className='text-2xl font-poppins' /> </div>}
     </div>
   )
